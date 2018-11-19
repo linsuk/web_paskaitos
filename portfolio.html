@@ -3,32 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/tekstas.css">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/layout.css">
+    <link rel="stylesheet" href="/css/dizainas.css">
+    <link rel="stylesheet" href="/css/animacijos.css">
+
 </head>
 <body>
 <header>
-    <nav class="top">
-        <a href="/">Pradzia</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="kontaktai.html">Kontaktai</a>
-    </nav>
+    <div class="top">
+        <div class="top-grid-item"><img src="logo.png"/></div>
+        <div class="top-grid-item"><a href="/">Pradžia</a></div>
+        <div class="top-grid-item"><a href="portfolio.html">Portfolio</a></div>
+        <div class="top-grid-item"><a href="kontaktai.html">Kontaktai</a></div>
+    </div>
 </header>
-<main>
+<main id="portfolio-content">
     <div class="content">
-        <header>
-            <h1>Portfolio</h1>
-        </header>
-      Portfolio
+       <div class="filter">
+           [<a href="c#">C#</a>]
+           [<a href="java">JAVA</a>]
+
+       </div>
+
+        <div class="grid-portfolio">
+            <div class="grid-portfolio-item"><img src="/img/csharp/atsitiktiniu_skaiciu_sarasas.JPG" alt="Portfolio 1" width=500px height=500px/></div>
+            <div class="grid-portfolio-item"><img src="/img/csharp/grazinti_bet_kuri.JPG" alt="Portfolio 2" width=500px height=500px/></div>
+            <div class="grid-portfolio-item"><img src="/img/csharp/grazinti_didziausia.JPG" alt="Portfolio 3" width=500px height=500px/></div>
+            <div class="grid-portfolio-item"><img src="/img/csharp/kuris_didesnis.JPG" alt="Portfolio 4" width=500px height=500px/></div>
+            <div class="grid-portfolio-item"><img src="/img/csharp/sujungti_zodzius.JPG" alt="Portfolio 5" width=500px height=500px/></div>
+            <div class="grid-portfolio-item"><img src="/img/csharp/veiksmai_su_masyvo_elementais.JPG" alt="Portfolio 6" width=500px height=500px/></div>
+        </div>
+
+        <div class="pagination">
+            <div><< 1 | 2 | 3 >></div>
+        </div>
+
     </div>
 </main>
 <footer>
-    <span>2018&copy; visos teises saugomos</span>
-    <nav class="bottom">
-        <a href="/">Pradzia</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="kontaktai.html">Kontaktai</a>
-    </nav>
+    <div class="bottom">
+        <div class="bottom-grid-item"><span>2018&copy; visos teises saugomos</span></div>
+        <div class="bottom-grid-item"><img src="logo.png"/></div>
+    </div>
+
+
 </footer>
 </body>
 </html>

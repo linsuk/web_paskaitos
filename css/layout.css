@@ -1,0 +1,42 @@
+main{
+    margin: 0 auto;
+
+}
+
+#kontaktai-main, #index-main{
+    width: 960px;
+}
+
+
+.top{
+     display: inline-grid;
+     grid-template-rows: 60px;
+     grid-template-columns: 300px auto auto auto;
+
+ }
+
+.bottom-footer{
+    display: inline-grid;
+    grid-template-columns: 50px 600px;
+
+}
+
+.top-grid-item{
+    align-self: baseline;
+    padding-right: 10px;
+}
+
+.grid-portfolio{
+    width: content-box;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+
+}
+
+.grid-portfolio-item{
+    justify-self: center;
+}
+

@@ -1,0 +1,60 @@
+
+
+body{
+    color:black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+header{
+    background-color: lightseagreen;
+    width: 100%;
+}
+
+footer{
+    background-color: darkmagenta;
+}
+
+h1{
+    font-weight: bold;
+    font-size: 36px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+main{
+    border: 1px solid darkgrey;
+    background-color: lightgrey;
+
+}
+
+.content{
+    margin-top: 50px;
+}
+
+.pagination, .filter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+/* unvisited link */
+a:link {
+    color: red;
+}
+
+/* visited link */
+a:visited, a:active {
+    color: white;
+}
+
+/* mouse over link */
+a:hover {
+    color: hotpink;
+}
+
+.content-header image{
+    padding-top: 20px;
+}

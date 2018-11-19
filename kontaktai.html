@@ -4,58 +4,55 @@
     <meta charset="UTF-8">
     <title>Kontaktai</title>
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/tekstas.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/dizainas.css">
+
+
 </head>
 <body>
 <header>
-    <nav class="top">
-        <a href="/">Pradzia</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="kontaktai.html">Kontaktai</a>
-    </nav>
+    <div class="top">
+        <div class="top-grid-item"><img src="logo.png"/></div>
+        <div class="top-grid-item"><a href="/">Pradžia</a></div>
+        <div class="top-grid-item"><a href="portfolio.html">Portfolio</a></div>
+        <div class="top-grid-item"><a href="kontaktai.html">Kontaktai</a></div>
+    </div>
 </header>
-<main>
-    <div class="content">
-        <header>
-            <h1>Kontaktai</h1>
-        </header>
+<main id="kontaktai-main">
+
+    <div class="content-header">
+        <h1>Kontaktai</h1>
 
     </div>
 
-    <form action="saugoti.php" method="post" target="_blank">
-        <label for="vardas">Tavo vardas</label>
-        <input type="text" name="firstName" id="vardas"/>
+    <div class="kontaktai-content" >
+        <div class="column">
+            <img src="/img/map.JPG"/>
+        </div>
 
-        El. paštas:
-        <input type="email" name="email"><br><br>
-
-        Gimimo data:
-        <input type="date" name="bday"><br><br>
-
-        <select name="miestas" id="miestas">
-            <option value="kaunas">Kaunas</option>
-            <option value="vilnius">Vilnius</option>
-            <option value="klaipeda">Klaipeda</option>
-        </select> <br><br>
-
-        <input type="radio" name="lytis" value="vyras" checked>Vyras<br>
-        <input type="radio" name="lytis" value="moteris" checked>Moteris<br><br>
-
-        <input type="checkbox" name="transportas1" value="dviratis">As turiu dvirati<br>
-        <input type="checkbox" name="transportas2" value="automobilis">As turiu automobili<br><br>
+        <div class="column">
+            <form action="saugoti.php" method="post" target="_blank">
+                <label for="vardas">Vardas</label>
+                <input type="text" name="firstName" id="vardas"/><br/>
+                <label for="pastas">El. paštas</label>
+                <input type="email" name="email" id="pastas"/> <br/>
+                <label for="subject">Jūsų žinutė</label><br/>
+                <textarea id="subject" name="subject" placeholder="Parašykite ką nors.." style="height:170px"></textarea>
+                <button type="submit">Siųsti</button><br><br>
+            </form>
+        </div>
+</div>
 
 
-        <button type="submit">Klausti</button><br><br>
 
-    </form>>
+
+
 </main>
 <footer>
-    <span>2018&copy; visos teises saugomos</span>
-    <nav class="bottom">
-        <a href="/">Pradzia</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="kontaktai.html">Kontaktai</a>
-    </nav>
+    <div class="bottom-footer">
+        <div class="bottom-grid-item"><span>2018&copy; visos teises saugomos</span></div>
+        <div class="bottom-grid-item"><img src="logo.png"/></div>
+    </div>
 </footer>
 </body>
 </html>
