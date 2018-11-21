@@ -13,6 +13,8 @@ header{
 
 footer{
     background-color: darkmagenta;
+    color: white;
+    width: 100%;
 }
 
 h1{
@@ -40,21 +42,15 @@ main{
     padding-bottom: 10px;
 }
 
-/* unvisited link */
 a:link {
     color: red;
 }
 
-/* visited link */
 a:visited, a:active {
     color: white;
 }
 
-/* mouse over link */
 a:hover {
     color: hotpink;
 }
 
-.content-header image{
-    padding-top: 20px;
-}
